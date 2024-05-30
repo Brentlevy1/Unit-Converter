@@ -1,0 +1,91 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #1C1C1C;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    background: #F4F4F4;
+    width: 575px;
+}
+.unitHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #6943FF;
+    color: #fff;
+    padding: 2em 1em;
+    text-align: center;
+;
+}
+
+.unitHeader h1{
+    font-weight: 300;
+    margin: 0;
+}
+
+.unitHeader input[type="number"] {
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: .25em;
+    width: 120px;
+    height: 85px;
+    font-size:60px;
+    color: #fff;
+    margin-top:.5em;
+    text-align: center;
+}
+
+.unitHeader input:hover{
+    overflow: hidden;
+}
+
+.unitHeader button{
+    flex-shrink: 0;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 2em;
+    font-size: 14px;
+    flex-shrink: 3;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+
+.unitBody{
+    background-color: #1F2937;
+    color: #6943FF;
+    padding: 2em;
+    text-align: center;
+}
+
+.resultContainer{
+    margin: 1.5em 0;;
+    background-color: #273549;
+    color: #fff;
+    padding: .5em 0;
+}
+
+.unitBody h2{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-size: 20px;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    color: #5A537B;
+}
+
+.unitBody p{
+    color: #fff;
+    font-size: 14px;
+}
