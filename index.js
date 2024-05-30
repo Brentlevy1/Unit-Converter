@@ -27,15 +27,10 @@ function convertCalculate(userNumber) {
     volumeResultPound = userNumber * kiloBase;
     volumeResultKilo = userNumber / kiloBase;
 
-    resultsLengthEL.innerHTML = `
-                                <p id="resultsLength"> ${userNumberInputEL.value} meters = ${lengthResultFeet.toFixed(3)} feet | ${userNumberInputEL.value} feet = ${lengthResultMeter.toFixed(3)} meters</p> 
-                                `;
-    resultsVolumeEL.innerHTML = `
-                                <p id="resultsLength"> ${userNumberInputEL.value} liters = ${volumeResultGallon.toFixed(3)} Gallons | ${userNumberInputEL.value} Gallons = ${volumeResultLiter.toFixed(3)} liters</p> 
-                                `;
-    resultsMassEL.innerHTML = `
-                                <p id="resultsLength"> ${userNumberInputEL.value} Kilos = ${volumeResultPound.toFixed(3)} Pounds | ${userNumberInputEL.value} Kilos = ${volumeResultKilo.toFixed(3)} Pounds</p> 
-                                `;
+    resultsLengthEL.innerHTML = `${userNumberInputEL.value} meters = ${lengthResultFeet.toFixed(3)} feet | ${userNumberInputEL.value} feet = ${lengthResultMeter.toFixed(3)} meters `;
+    resultsVolumeEL.innerHTML = `${userNumberInputEL.value} liters = ${volumeResultGallon.toFixed(3)} Gallons | ${userNumberInputEL.value} Gallons = ${volumeResultLiter.toFixed(3)} liters `;
+    resultsMassEL.innerHTML = `${userNumberInputEL.value} Kilos = ${volumeResultPound.toFixed(3)} Pounds | ${userNumberInputEL.value} Kilos = ${volumeResultKilo.toFixed(3)} Pounds `;
+
     //console.log(userNumberInputEL.value, meterBase)
 }
 
@@ -45,15 +40,9 @@ convertBtn.addEventListener("click", function () {
 });
 
 resetBtn.addEventListener("click", function () {
-    resultsLengthEL.innerHTML = `
-        <p id="resultsLength">meters = feet | feet = meters</p> 
-    `;
-    resultsVolumeEL.innerHTML = `
-        <p id="resultsVolume"> liters = Gallons | Gallons = liters</p> 
-    `;
-    resultsMassEL.innerHTML = `
-        <p id="resultsMass"> kilos = pounds | pounds = kilos</p>
-    `;
+    resultsLengthEL.innerHTML = ` meters = feet | feet = meters  `;
+    resultsVolumeEL.innerHTML = `  liters = Gallons | Gallons = liters  `;
+    resultsMassEL.innerHTML = `   kilos = pounds | pounds = kilos `;
     userNumberInputEL.value = "";
 });
 
